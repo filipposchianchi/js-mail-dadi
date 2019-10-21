@@ -8,6 +8,7 @@ for (var i = 0; i < listaMail.length; i++) {
     if(listaMail[i] === userMail ) {
         document.getElementById("titolo").innerHTML = "Mail trovata, puoi accedere al gioco!"
         
+        // salvo i valori dei due dadi
         var mioDado = Math.floor(Math.random() * 5) + 1;
         var dadoComp = Math.floor(Math.random() * 5) + 1;
 
@@ -16,6 +17,7 @@ for (var i = 0; i < listaMail.length; i++) {
         document.getElementById("miodado").innerHTML = "Il tuo dado ha fatto: " + "<span>" + mioDado + "</span>";
         document.getElementById("dadocomp").innerHTML = "Il tuo avversario ha fatto: " + "<span>" + dadoComp + "</span>";
 
+        // controllo il vincitore
         if(mioDado > dadoComp) {
             document.getElementById("vincitore").innerHTML = "Complimenti hai vinto!!!"
         }else if (mioDado === dadoComp) {

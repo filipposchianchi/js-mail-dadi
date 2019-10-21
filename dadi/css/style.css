@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;;
+}
+.container span {
+    color:red;
+}
+
+.container span {
+    color: red;
+    margin-top: 20px;
+}
+
+
